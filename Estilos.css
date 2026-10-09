@@ -1,0 +1,73 @@
+/* Configuración general y tipografía estilo píxel / videojuego */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #5c94fc; /* Azul cielo característico de Super Mario */
+    font-family: 'Press Start 2P', 'Courier New', monospace; /* Fuente estilo retro de 8 bits */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+/* Encabezado principal (H1) con los colores emblemáticos de Mario */
+h1 {
+    font-size: 2.5rem;
+    color: #e52521; /* Rojo Mario */
+    text-shadow: 
+        3px 3px 0px #000,
+        -2px -2px 0px #fbd000; /* Sombra amarilla brillante */
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* Subtítulo (H2) estilo tubería / bloque */
+h2 {
+    font-size: 1.2rem;
+    color: #fbd000; /* Amarillo moneda */
+    text-shadow: 2px 2px 0px #000;
+    margin-bottom: 25px;
+    background-color: #00a800; /* Verde tubería */
+    display: inline-block;
+    padding: 8px 16px;
+    border: 4px solid #000000;
+    border-radius: 8px;
+    box-shadow: 0px 4px 0px #000;
+}
+
+/* Estilo del párrafo simulando una caja de texto de juego */
+p {
+    font-size: 0.85rem;
+    color: #000000;
+    background-color: #fcebe6; /* Fondo claro para buena lectura */
+    border: 4px solid #e52521;
+    outline: 4px solid #000000;
+    max-width: 700px;
+    margin: 20px auto 30px auto;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 0px #000000;
+    text-align: justify;
+}
+
+/* Estilo de la imagen con marco de bloque de Mario y sombra */
+img {
+    border: 5px solid #fbd000; /* Marco dorado/amarillo */
+    outline: 5px solid #000000;
+    border-radius: 12px;
+    box-shadow: 0 8px 0 #000000;
+    margin-top: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Efecto interactivo al pasar el cursor sobre la imagen */
+img:hover {
+    transform: scale(1.05) translateY(-5px); /* Salto como el de Mario */
+}
